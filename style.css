@@ -63,6 +63,7 @@
 .h1 {
     margin-top: 150px;
     margin-left: 600px;
+    margin-bottom: 150px;
     text-align: end;
 }
 
@@ -81,9 +82,39 @@
     font-size: 24px;
 }
 
-.btn-header {
-    background: #0E4674;
+.btn {
+    border: solid rgba(255, 255, 255, 0.50);
+    background-image: linear-gradient(60deg, #26649f 10%, #0E4674 50%, #0a194d 100%);
     padding: 15px 50px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.btn:hover {
+    box-shadow: 0 0px 0px 0 rgba(0, 40, 120, 0);
+    transform: scale(0.930);
+    transition: 1s;
+}
+
+/* h3 */
+
+.project-bckg-header {
+    background-color: #0E4674;
+    position: relative;
+    left: 0;
+    height: 60px;
+    width: 750px;
+    margin: 100px 0;
+}
+
+.project-header {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
     color: #fff;
 }
 
@@ -112,7 +143,7 @@
     margin-left: 50px;
 }
 
-.text-about-factory {
+.mb20 {
     margin-bottom: 20px;
 }
 
@@ -127,8 +158,10 @@
 .people {
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     width: 300px;
+    height: 470px;
     border-right: 1px solid #b0b0b0;
 }
 
@@ -139,12 +172,14 @@
 .h5-team {
     font-weight: 600;
     text-align: center;
-    margin: 20px 0px;
 }
 
 .job-title {
-    margin-bottom: 20px;
     font-size: 16px;
+}
+
+.contacts-div {
+    text-align: center;
 }
 
 .team-contacts {
@@ -157,3 +192,99 @@
     color: #000;
     transition: 1s;
 }
+
+/* Projects */
+
+.projects-nav {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+    gap: 100px;
+    margin: 0 auto;
+}
+
+.project1 {
+    display: flex;
+    flex-direction: column;
+}
+
+.container-project-name {
+    display: flex;
+    align-items: center;
+}
+
+.h5-project {
+    font-weight: 700;
+    font-size: 20px;
+    width: 280px;
+}
+
+.description-project-name {
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.btn-project {
+    text-decoration: none;
+    color: #454444;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.btn-flex {
+    display: flex;
+    align-items: center;
+}
+
+.ml-arrow {
+    margin-left: 20px;
+}
+
+/* Form */
+
+.h3-form {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    width: 400px;
+    margin: 100px auto;
+}
+
+.form-main {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+    border-top: 1px solid #868686;
+    border-bottom: 1px solid #868686;
+}
+
+.position-form {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 400px;
+}
+
+.input-form {
+    border: none;
+    border-bottom: 1px solid #454444;
+    margin-bottom: 20px;
+    resize: none;
+    font-size: 18px;
+    text-align: center;
+}
+
+.label-text {
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.btn-width {
+    margin: 50px auto 0 auto;
+    width: 190px;
+}
+
+
+
+
