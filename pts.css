@@ -95,6 +95,7 @@
 .active-link {
     color: #fff;
 }
+
 .nav-cell:last-child {
     border: none;
 }
@@ -108,7 +109,45 @@
 /* List */
 
 .list {
-    list-style-type: disc;
+    padding-left: 20px;
+    list-style-type: decimal;
+}
+
+/* Characteristics */
+
+.nav-cell-char {
+    height: 100%;
+    width: 600px;
+    height: 60px;
+    padding-left: 20px;
+    text-align: left;
+    vertical-align: middle;
+    border-right: 1px solid #454444;
+    border-bottom: 1px solid #454444;
+}
+
+.project-table-char {
+    border-top: 1px solid #454444;
+    border-left: 1px solid #454444;
+    margin: 50px 0;
+}
+
+/* Article */
+
+.disc-img {
+    
+}
+
+.article-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 450px;
+    padding: 50px 0;
+}
+
+.article-text {
+    text-align: center;
 }
 
 /* Footer */
