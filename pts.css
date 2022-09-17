@@ -134,8 +134,14 @@
 
 /* Article */
 
-.disc-img {
-    
+.figure-article-left {
+    float: left;
+    margin: 0 20px 20px 0;
+}
+
+.figure-article-right {
+    float: right;
+    margin: 0 0 20px 20px;
 }
 
 .article-img {
@@ -150,6 +156,33 @@
     text-align: center;
 }
 
+.article-img-big {
+    height: 540px;
+}
+
+.article-img-small {
+    height: 320px;
+}
+
+.article-flex {
+    display: flex;
+    flex-direction: row;
+    margin: 50px 0;
+}
+
+.article-column {
+    padding-right: 10px;
+}
+
+.article-column-head {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.mb50 {
+    margin-bottom: 50px;
+}
 /* Footer */
 
 .footer {
