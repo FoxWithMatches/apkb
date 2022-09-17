@@ -112,11 +112,28 @@
     margin-bottom: 20px;
 }
 
+.mid14 {
+    font-size: 14px;
+    text-align: middle;
+}
+
+.head20-centr {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 /* List */
 
 .list {
     padding-left: 20px;
     list-style-type: disc;
+}
+
+.list-decimal {
+    padding-left: 20px;
+    list-style-type: decimal;
 }
 
 /* Characteristics */
@@ -136,6 +153,12 @@
     border-top: 1px solid #454444;
     border-left: 1px solid #454444;
     margin: 50px 0;
+}
+
+.project-table-char20 {
+    border-top: 1px solid #454444;
+    border-left: 1px solid #454444;
+    margin: 20px 0;
 }
 
 /* Article */
@@ -177,7 +200,7 @@
 }
 
 .article-column {
-    padding-right: 10px;
+    padding-right: 30px;
 }
 
 /* .article-column-head {
