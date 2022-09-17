@@ -106,6 +106,12 @@
     margin-bottom: 20px;
 }
 
+.head20 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
 /* List */
 
 .list {
@@ -174,11 +180,11 @@
     padding-right: 10px;
 }
 
-.article-column-head {
+/* .article-column-head {
     font-size: 24px;
     font-weight: 600;
     margin-bottom: 20px;
-}
+} */
 
 .mb50 {
     margin-bottom: 50px;
