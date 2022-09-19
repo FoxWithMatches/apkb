@@ -10,6 +10,19 @@
     color: #454444;
 }
 
+.h3 {
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.mt20 {
+    margin-top: 20px;
+}
+
+.mb20 {
+    margin-bottom: 20px;
+}
+
 /* Header */
 
 .logotype {
@@ -143,10 +156,6 @@
     margin-left: 50px;
 }
 
-.mb20 {
-    margin-bottom: 20px;
-}
-
 .license-img {
     display: flex;
     flex-wrap: wrap;
@@ -212,11 +221,6 @@
     align-items: center;
 }
 
-.h5-project {
-    font-weight: 700;
-    font-size: 20px;
-    width: 280px;
-}
 
 .description-project-name {
     font-size: 20px;
@@ -376,6 +380,54 @@
     text-align: center;
 }
 
+/* Contacts */
+
+.contacts-item {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-bottom: 100px;
+}
+
+.contacts-data {
+    display: flex;
+    flex-direction: column;
+}
+
+.link-contacts {
+    text-decoration: none;
+    color: #0E4674;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.position-iframe {
+    position: relative;
+}
+
+.map {
+    max-width: 1920px;
+    width: 100%;
+    height: 500px;
+    margin-top: 100px;
+}
+
+.address {
+    position: absolute;
+    top: 0;
+    right: 120px;
+    width: 350px;
+    height: 200px;
+    background-color: #0E4674;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    padding: 50px;
+}
+
+.address-clock {
+    font-size: 20px;
+}
 
 
 
