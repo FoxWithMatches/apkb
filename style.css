@@ -429,5 +429,28 @@
     font-size: 20px;
 }
 
+/* 404 */
 
+.error {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 100px;
+}
+
+.h1-error {
+    font-size: 180px;
+    font-weight: 800;
+    color: #0E4674;
+}
+
+.link-error {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-link-error {
+    color: #454444;
+    font-size: 20px;
+}
 
