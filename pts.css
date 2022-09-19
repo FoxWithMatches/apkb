@@ -36,6 +36,7 @@
 }
 
 .nav-link {
+    position: relative;
     color: #fff;
     text-decoration: none;
     margin-left: 20px;
@@ -43,6 +44,31 @@
 
 .nav-link:first-child {
     margin-left: 0;
+}
+
+.nav-link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -10px;
+    width: 0;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.5s;
+    opacity: 0.7;
+}
+
+.nav-link:hover::after {
+    content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    height: 2px;
+    background-color: #fff;
+    transition: width 0.5s;
 }
 
 /* Project */
@@ -90,6 +116,7 @@
 .table-link {
     text-decoration: none;
     color: #454444;
+    font-size: 20px;
 }
 
 .active-link {
@@ -107,23 +134,22 @@
 }
 
 .head20 {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
     margin-bottom: 20px;
 }
 
 .head20-centr {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
     margin-bottom: 20px;
     text-align: center;
 }
 
 .head20-uppercase {
-    font-size: 20px;
+    font-size: 24px;
     font-weight: 600;
     margin: 20px 0 10px 0;
-    text-transform: uppercase;
 }
 
 .mid14 {
@@ -220,6 +246,7 @@
 .mb50 {
     margin-bottom: 50px;
 }
+
 /* Footer */
 
 .footer {
@@ -279,4 +306,9 @@
     font-size: 18px;
     text-align: center;
     vertical-align: middle;
+}
+
+.footer-link:hover {
+    scale: 1.1;
+    transition: 1s;
 }
