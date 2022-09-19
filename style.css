@@ -135,6 +135,16 @@
 
 .scroll-project {
     margin-top: 100px;
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: mandatory; 
+    scroll-padding: 24px;
+    gap: 20px;
+}
+
+.scroll-project .project-item {
+    flex: 0 0 25%;
+    scroll-snap-align: start;
 }
 
 .project-item {
@@ -333,6 +343,11 @@
     margin-bottom: 10px;
 }
 
+.footer-link:hover {
+    scale: 1.1;
+    transition: 1s;
+}
+
 .footer-head {
     background-color: #0E4674;
     position: relative;
@@ -399,6 +414,11 @@
     color: #0E4674;
     font-size: 28px;
     font-weight: 800;
+}
+
+.link-contacts:hover {
+    scale: 1.1;
+    transition: 1s;
 }
 
 .position-iframe {
