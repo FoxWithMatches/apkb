@@ -23,6 +23,10 @@
     margin-bottom: 20px;
 }
 
+.mt100 {
+    margin-top: 100px;
+}
+
 /* Header */
 
 .logotype {
@@ -174,6 +178,17 @@
 
 /* Team */
 
+.peoples-team {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: mandatory;
+}
+
+.peoples-team .people {
+    flex: 0 0 25%;
+    scroll-snap-align: start;
+}
+
 .people {
     display: flex;
     flex-direction: column;
@@ -191,10 +206,13 @@
 .h5-team {
     font-weight: 600;
     text-align: center;
+    width: 236px;
 }
 
 .job-title {
     font-size: 16px;
+    text-align: center;
+    width: 250px;
 }
 
 .contacts-div {
@@ -231,7 +249,6 @@
     align-items: center;
 }
 
-
 .description-project-name {
     font-size: 20px;
     margin: 20px 0;
@@ -242,6 +259,11 @@
     color: #454444;
     font-weight: 700;
     font-size: 20px;
+}
+
+.btn-project:hover {
+    scale: 1.1;
+    transition: 1s;
 }
 
 .btn-flex {
@@ -260,13 +282,15 @@
     font-weight: 700;
     text-align: center;
     width: 400px;
-    margin: 100px auto;
+    margin: 150px auto 50px auto;
 }
 
 .form-main {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    padding: 100px;
+    align-items: center;
+    padding: 50px;
     border-top: 1px solid #868686;
     border-bottom: 1px solid #868686;
 }
@@ -281,17 +305,46 @@
 .input-form {
     border: none;
     border-bottom: 1px solid #454444;
-    margin-bottom: 20px;
     resize: none;
-    font-size: 18px;
-    text-align: center;
+    padding: 10px 0;
+    outline: none;
+    width: 400px;
 }
 
-.label-text {
+.animation-input {
+    position: relative;
+    width: 400px;
+}
+
+.position-form input {
+    width: 100%;
+    padding: 10px 0;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #454444;
+    outline: none;
+    background: transparent;
+    font-size: 18px;
+    resize: none;
+}
+
+.position-form label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    pointer-events: none;
+    transition: .5s;
     font-size: 18px;
     font-weight: 600;
-    text-align: center;
-    margin-bottom: 10px;
+}
+
+.position-form input:focus ~ label {
+    top: -20px;
+}
+
+.position-form textarea:focus ~ label {
+    top: -20px;
 }
 
 .btn-width {
@@ -396,6 +449,14 @@
 }
 
 /* Contacts */
+
+.h3-form-contacts {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+    width: 400px;
+    margin: 0 auto 20px auto;
+}
 
 .contacts-item {
     display: flex;
