@@ -104,9 +104,9 @@
 }
 
 .h1 {
-    margin-top: 150px;
-    margin-left: 600px;
-    margin-bottom: 150px;
+    position: absolute;
+    right: 0;
+    top: 150px;
     text-align: end;
 }
 
@@ -162,13 +162,16 @@
     color: #fff;
 }
 
+.main-mt {
+    margin-top: 580px;
+}
+
 /* Project scroll */
 
 .scroll-project {
     display: flex;
     overflow-x: scroll;
     scroll-snap-type: mandatory;
-    /* scroll-padding: 24px; */
     gap: 20px;
 }
 
@@ -195,6 +198,12 @@
     float: right;
     margin-left: 50px;
 }
+
+/* .image-size {
+    display: block;
+    max-width: 100%;
+    height: auto;
+} */
 
 .license-img {
     display: flex;
@@ -273,6 +282,10 @@
 .container-project-name {
     display: flex;
     align-items: center;
+}
+
+.project-width {
+    width: 350px;
 }
 
 .description-project-name {
@@ -552,4 +565,84 @@
 .nav-link-error {
     color: #454444;
     font-size: 20px;
+}
+
+/* Adaptive */
+
+@media screen and (max-width: 1235px) {
+    .bckg-header {
+        width: 770px;
+    }
+
+    .page {
+        max-width: 1150px;
+    }
+}
+
+@media screen and (max-width: 1185px) {
+    .bckg-header {
+        width: 700px;
+        padding: 60px;
+    }
+
+    .page {
+        max-width: 1000px;
+    }
+
+    .airplane {
+        margin-top: -30px;
+    }
+
+    .h1 {
+        top: 100px;
+    }
+
+    .main-mt {
+        margin-top: 490px;
+    }
+
+}
+
+@media screen and (max-width: 1090px) {
+    .h1-text {
+        font-size: 36px;
+    }
+
+    .main-mt {
+        margin-top: 450px;
+    }
+
+    /* About */
+
+    .float-img-factory {
+        margin-left: 0;
+        margin-left: 10px;
+    }
+
+    /* Team */ 
+
+    .job-title {
+        width: 200px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .page {
+        max-width: 900px;
+    }
+
+    .main-mt {
+        margin-top: 420px;
+    }
+
+    .float-img-factory {
+        float: none;
+    }
+
+    .about-factory {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    
 }
