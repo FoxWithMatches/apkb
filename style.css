@@ -36,6 +36,11 @@ body {
 
 /* Header */
 
+.div-logo {
+    margin: -80px auto 0px;
+    width: 400px;
+}
+
 .logotype {
     width: 250px;
 }
@@ -43,7 +48,8 @@ body {
 .header {
     width: 100%;
     height: 100px;
-
+    background-color: #0E4674;
+    padding-bottom: 15px;
     position: absolute;
     top: 0;
     left: 0;
@@ -53,14 +59,12 @@ body {
 .header.fixed {
     height: auto;
     position: fixed;
-    background-color: #88AFCB;
+    background-color: #0E4674;
 }
 
 .header.fixed .header-item {
-    padding-top: 15px;
-    padding-bottom: 15px;
-
-    border-bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 0px;
 }
 
 .header-item {
@@ -69,7 +73,7 @@ body {
     align-items: center;
     padding: 15px 0;
 
-    border-bottom: 1px solid #0E4674;
+    /* border-bottom: 1px solid #0E4674; */
 }
 
 /* Nav */
@@ -81,7 +85,7 @@ body {
 
 .nav-link {
     position: relative;
-    color: #0E4674;
+    color: #fff;
     text-decoration: none;
     margin-left: 20px;
     z-index: 2;
@@ -209,7 +213,7 @@ body {
     left: 0;
     height: 60px;
     width: 750px;
-    margin: 100px 0;
+    margin: 150px 0 100px 0;
 }
 
 .project-header {
@@ -414,8 +418,11 @@ body {
     justify-content: center;
     align-items: center;
     padding: 50px;
-    border-top: 1px solid #868686;
-    border-bottom: 1px solid #868686;
+    background-color: rgba(14, 69, 113, .2);
+    /* border-top: 1px solid #868686;
+    border-bottom: 1px solid #868686; */
+    box-shadow: 0 0 10px #0E4674;
+    /* box-shadow: inset 0 0 15px #184567; */
 }
 
 .position-form {
@@ -619,6 +626,8 @@ body {
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     padding: 50px;
+    box-shadow: 0 0 15px #051e31;
+    box-shadow: inset 0 0 25px #051e31;
 }
 
 .address-clock {
