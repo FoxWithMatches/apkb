@@ -683,6 +683,14 @@ body {
         font-size: 16px;
     }
 
+    /* Contacts */
+
+    .address {
+        right: 50px;
+        width: 250px;
+        height: 200px;
+    }
+
 }
 
 @media screen and (max-width: 1090px) {
@@ -782,41 +790,54 @@ body {
     .bckg-header {
         display: none;
     }
-}
 
-@media screen and (max-width: 850px) {
     .project-bckg-header {
         width: 450px;
     }
 
-    .project-header {
-        top: 20px;
-        font-size: 20px;
-    }
-}
-
-@media screen and (max-width: 850px) {
-    .h1-text {
-        font-size: 36px;
-    }
-    
-    .h2-text {
-        font-size: 20px;
+    .project-item img {
+        width: 300px;
     }
 
-    .project-bckg-header {
-        width: 350px;
-    }
-}
+    /* Contacts */
 
-@media screen and (max-width: 850px) {
+    .contacts-data p {
+        width: 500px;
+        text-align: center;
+    }
+
+    .contacts-item {
+        flex-direction: column;
+    }
+
+    .contacts-data {
+        align-items: center;
+    }
+
+    .address {
+        width: 220px;
+        height: 250px;
+        padding: 20px;
+    }
 
     /* Career */
 
     .logo-partners img {
         width: 300px;
     }
+
 }
+
+@media screen and (max-width: 670px) {
+    .h1-text {
+        font-size: 36px;
+    }
+
+    .h2-text {
+        font-style: 24px;
+    }
+}
+
 
 @media screen and (max-width: 520px) {
     .project-item-img {
@@ -827,10 +848,20 @@ body {
         width: 150px;
     }
 
+    .form-main {
+        padding: 20px;
+    }
+
     /* Career */
 
     .logo-partners img {
         width: 250px;
+    }
+
+    /* Contacts */
+
+    .contacts-data p {
+        width: 400px;
     }
 }
 
@@ -838,22 +869,30 @@ body {
     .h5-team {
         font-size: 16px;
     }
+
+    .project-bckg-header {
+        width: 350px;
+    }
 }
 
 @media screen and (max-width: 435px) {
     .h1-text {
         font-size: 30px;
+        text-align: left;
     }
 
-    .h3-form {
-        width: 320px;
+    .h2-text {
+        font-size: 18px;
+        text-align: left;
     }
-    .position-form {
+
+    .form-main {
+        background-color: #fff;
+        box-shadow: none;
+    }
+
+    .animation-input {
         width: 350px;
-    }
-
-    .project-bckg-header {
-        
     }
 
     /* Career */
@@ -875,9 +914,33 @@ body {
     .project-bckg-header {
         width: 300px;
     }
-}
 
-@media screen and (max-width: 375px) {
+    .project-header {
+        font-size: 20px;
+    }
+
+    .position-form {
+        width: 350px;
+    }
+
+    .h3-form {
+        width: 320px;
+    }
+
+    /* Contacts */
+
+    .contacts-data p {
+        width: 300px;
+        text-align: left;
+    }
+
+    .contacts-data {
+        align-items: flex-start;
+    }
+
+    .link-contacts {
+        font-size: 22px;
+    }
 
     /* Career */
 
@@ -889,4 +952,25 @@ body {
         font-size: 20px;
     }
 
+}
+
+@media screen and (max-width: 320px) {
+
+    .h1-text {
+        font-size: 24px;
+    }
+
+    .h2-text {
+        font-size: 16px;
+    }
+    .position-form {
+        width: 280px;
+    }
+
+    /* Contacts */
+
+    .address {
+        right: 20px;
+    }
+    
 }
