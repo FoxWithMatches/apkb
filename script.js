@@ -35,7 +35,7 @@ $("[data-scroll]").on("click", function(event) {
   console.log(elementOffset);
 
   $("html, body").animate({
-    scrollTop: elementOffset - 70
+    scrollTop: elementOffset - 150
   }, 700);
 });
 
