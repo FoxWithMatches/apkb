@@ -406,12 +406,17 @@ body {
 
 /* Form */
 
+.form-bckg {
+    background-color: rgba(14, 69, 113, .2);
+}
+
 .h3-form {
     font-size: 24px;
     font-weight: 700;
     text-align: center;
     width: 400px;
     margin: 150px auto 50px auto;
+    padding-top: 50px;
 }
 
 .form-main {
@@ -420,8 +425,6 @@ body {
     justify-content: center;
     align-items: center;
     padding: 50px;
-    background-color: rgba(14, 69, 113, .2);
-    box-shadow: 0 0 10px #0E4674;
 }
 
 .position-form {
@@ -471,7 +474,7 @@ body {
     top: -20px;
     font-size: 16px;
     font-weight: 400;
-    color: #0E4674;
+    color: rgb(155, 154, 154);
 }
 
 .btn-width {
@@ -757,9 +760,9 @@ body {
         width: 150px;
     }
 
-    .intro {
+    /* .intro {
         text-align: center;
-    }
+    } */
 
     /*hamburger menu*/
 
