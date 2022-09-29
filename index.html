@@ -20,7 +20,7 @@
 </head>
 
 <body>
-
+<div class="page">
     <!-- Sprite -->
     <svg style="display: none;">
         <symbol id="mobile-phone" viewBox="0 0 477.156 477.156">
@@ -77,17 +77,16 @@
     </svg>
 
     <!-- Header -->
-
     <header class="header" id="header">
-        <div class="page">
+        <div class="container">
             <div class="header-item">
                 <a href="index.html">
                     <img class="logotype" src="/img/apkbLogoWhite.svg" alt="logotype apkb">
                 </a>
                 <nav class="nav-header" id="nav">
                     <a href="#" class="nav-link" data-scroll="#intro">Главная</a>
-                    <a href="#" class="nav-link" data-scroll="#factory">О предприятии</a>
-                    <a href="#" class="nav-link" data-scroll="#team">Руководство</a>
+                    <!-- <a href="#" class="nav-link" data-scroll="#factory">О предприятии</a>
+                    <a href="#" class="nav-link" data-scroll="#team">Руководство</a> -->
                     <a href="#" class="nav-link" data-scroll="#projects">Проекты</a>
                     <a href="career.html" class="nav-link">Карьера</a>
                     <a href="" class="nav-link">Информация</a>
@@ -103,9 +102,8 @@
     </header>
 
     <!-- Intro -->
-
     <div class="intro" id="intro">
-        <div class="page">
+        <div class="container">
             <div class="h1">
                 <h1 class="h1-text">ООО “Арзамасское приборостроительное конструкторское бюро”</h1>
                 <h2 class="h2-text">современные разработки в интересах МО РФ и гражданского назначения</h2>
@@ -114,13 +112,12 @@
         </div>
     </div>
 
-    <!-- Main -->
-
+    <!-- projects -->
     <div class="project-bckg-header">
         <h3 class="project-header">Проекты и разработки</h3>
     </div>
 
-    <div class="page">
+    <div class="container">
         <div class="scroll-project">
             <div class="project-item">
                 <img class="project-item-img" src="/img/project.png" alt="project">
@@ -128,7 +125,7 @@
                     гражданской авиации</p>
             </div>
 
-            <div class="project-item">
+            <!-- <div class="project-item">
                 <img class="project-item-img" src="/img/project2.png" alt="project">
                 <p class="description-project-scroll">Разработка датчиков первичной информации</p>
             </div>
@@ -165,29 +162,37 @@
                 <img class="project-item-img" src="/img/project8.png" alt="project">
                 <p class="description-project-scroll">Разработка изготовление в сфере гражданской продукции</p>
             </div>
-        </div>
+        </div> -->
+    </div>
     </div>
 
     <!-- About -->
-
     <div class="project-bckg-header">
         <h3 class="project-header" id="factory">О предприятии</h3>
     </div>
 
-    <div class="page">
+    <div class="container">
         <div class="about-factory">
-            <img class="float-img-factory" src="/img/factoryAPKB.png" alt="factory">
-            <p class="mb20">Общество с ограниченной ответственностью «Арзамасское приборостроительное конструкторское
-                бюро» (ООО «АПКБ») создано в 2013 году.</p>
-            <p class="mb20">В ряду значимых проектов «АПКБ» – выпуск новейших образцов датчиков первичной информации,
-                исполнительных механизмов и систем управления.</p>
-            <p class="mb20">«АПКБ» обладает уникальным научно-техническим потенциалом. Собственная производственная,
-                исследовательская и испытательная база обеспечивает реализацию полного цикла создания современных
-                наукоемких образцов продукции военного и гражданского назначения от формирования технических
-                предложений, поискового и компьютерного моделирования до изготовления опытных образцов и выпуска
-                серийной продукции совместно с АО «АПЗ».</p>
-            <p class="mb20">«АПКБ» имеет лицензирование различных видов деятельности и прикрепление ВП МО РФ.</p>
-            <p class="mb20">Все работы выполняются в соответствии с ГОСТ Р ИСО 9001-2015 и ГОСТ РВ 0015-002-2012.</p>
+            <div class="about-factory-item">
+                <div class="about-factory-text">
+                    <p class="mb20">Общество с ограниченной ответственностью «Арзамасское приборостроительное конструкторское
+                        бюро» (ООО «АПКБ») создано в 2013 году.</p>
+                    <p class="mb20">В ряду значимых проектов «АПКБ» – выпуск новейших образцов датчиков первичной информации,
+                        исполнительных механизмов и систем управления.</p>
+                    <p class="mb20">«АПКБ» обладает уникальным научно-техническим потенциалом. Собственная производственная,
+                        исследовательская и испытательная база обеспечивает реализацию полного цикла создания современных
+                        наукоемких образцов продукции военного и гражданского назначения от формирования технических
+                        предложений, поискового и компьютерного моделирования до изготовления опытных образцов и выпуска
+                        серийной продукции совместно с АО «АПЗ».</p>
+                    <p class="mb20">«АПКБ» имеет лицензирование различных видов деятельности и прикрепление ВП МО РФ.</p>
+                    <p class="mb20">Все работы выполняются в соответствии с ГОСТ Р ИСО 9001-2015 и ГОСТ РВ 0015-002-2012.</p>
+                </div>
+            </div>
+            <div class="about-factory-item">
+                <img class="float-img-factory" src="/img/factoryAPKB.png" alt="factory">
+            </div>
+            
+            
         </div>
 
         <div class="license-img mt100">
@@ -199,12 +204,11 @@
     </div>
 
     <!-- Team -->
-
     <div class="project-bckg-header">
         <h3 class="project-header" id="team">Руководство</h3>
     </div>
 
-    <div class="page">
+    <div class="container">
         <div class="peoples-team">
             <div class="people">
                 <img class="img-team" src="/img/suchorukov.png" alt="sukhorukov">
@@ -235,7 +239,7 @@
                 </div>
             </div>
 
-            <div class="people">
+            <!-- <div class="people">
                 <img class="img-team" src="/img/dubov.png" alt="dubov">
                 <h5 class="h5-team">Дубов Александр Викторович</h5>
                 <p class="job-title">Начальник КБ</p>
@@ -332,19 +336,19 @@
                         <p class="mb20">valentina.Vialdina@oooapkb.ru</p>
                     </a>
                 </div>
-            </div>
+            </div> -->
         </div>
     </div>
 
-    <!-- Projects -->
+    <!-- Projects nav -->
 
     <div class="project-bckg-header">
         <h3 class="project-header" id="projects">Проекты</h3>
     </div>
 
-    <div class="page">
+    <div class="container">
         <div class="projects-nav">
-            <div class="project1">
+            <div class="project">
                 <div class="container-project-name">
                     <img class="float-img-project" src="/img/gear.svg" alt="gear">
                     <h5 class="h3 mb20">Ролико-винтовая передача</h5>
@@ -358,12 +362,12 @@
                 </a>
             </div>
 
-            <div class="project1">
+            <div class="project">
                 <div class="container-project-name">
                     <img class="float-img-project" src="/img/gear.svg" alt="gear">
                     <h5 class="h3 mb20">Малогабаритная шарико-винтовая передача</h5>
                 </div>
-                <p class="description-project-name project-width">Малогабаритная шарико-винтовая передача</p>
+                <p class="description-project-name">Малогабаритная шарико-винтовая передача</p>
                 <a class="btn-project" href="">
                     <div class="btn-flex">
                         <p>Подробнее</p>
@@ -372,7 +376,7 @@
                 </a>
             </div>
 
-            <div class="project1">
+            <div class="project">
                 <div class="container-project-name">
                     <img class="float-img-project" src="/img/gear.svg" alt="gear">
                     <h5 class="h3 mb20">Шарико-винтовая передача</h5>
@@ -386,7 +390,7 @@
                 </a>
             </div>
 
-            <div class="project1">
+            <div class="project">
                 <div class="container-project-name">
                     <img class="float-img-project" src="/img/gear.svg" alt="gear">
                     <h5 class="h3 mb20">Волновая передача</h5>
@@ -402,8 +406,9 @@
         </div>
     </div>
 
+    <!--form-->
     <div class="form-bckg">
-        <div class="page">
+        <div class="container">
         <h3 class="h3-form">Отправить заявку на посещение предприятия</h3>
 
         <div class="form-main">
@@ -432,7 +437,8 @@
     </div>
     </div>
 
-    <div class="page">
+    <!--footer-->
+    <div class="container">
         <footer class="footer">
             <div class="footer-cell">
                 <img class="footer-img" src="/img/Phone.svg" alt="phone">
@@ -464,6 +470,7 @@
 
     <script src="script.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</div>
 </body>
 
 </html>
