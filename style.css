@@ -150,7 +150,6 @@ body {
     bottom: 150px;
     width: 100%;
     max-width: 600px;
-    /* padding-right: 50px; */
 }
 
 .h1-text {
@@ -247,20 +246,90 @@ body {
 
 /* Project scroll */
 
-/* .scroll-project {
+.slick-dots {
     display: flex;
-    overflow-x: scroll;
-    scroll-snap-type: mandatory;
-    gap: 20px;
+    justify-content: center;
 }
 
-.scroll-project .project-item {
-    flex: 0 0 25%;
-    scroll-snap-align: start;
-} */
+.slick-dots li {
+    margin: 20px 5px;
+}
+
+.slick-dots button {
+    font-size: 0;
+    color: transparent;
+    border: 0;
+
+    padding: 0;
+    background-color: #0E4674;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.slick-dots button:hover {
+    cursor: pointer;
+}
+
+.slick-dots .slick-active button{
+    opacity: .5;
+}
+
+/* slick arrows */
+
+.slick-arrow {
+    display: block;
+    font-size: 0;
+    color: transparent;
+
+    border: 0;
+    background: 0;
+    cursor: pointer;
+
+    position: absolute;
+    bottom: 20px;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.slick-arrow:focus {
+    outline: 0;
+}
+
+.slick-prev {
+    left: 0;
+    transform: rotate(-45deg);
+}
+
+.slick-next {
+    right: 0;
+    transform: rotate(135deg);
+}
+
+.slick-arrow:after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    border-top: 2px solid #0E4674;
+    border-left: 2px solid #0E4674;
+}
+
+.scroll-project {
+    padding: 20px;
+    margin-bottom: 30px;
+}
 
 .project-item {
     position: relative;
+
+}
+
+.project-item-img{
+    width: 100%;
+    height: auto;
+    min-height: 300px;    
 }
 
 .description-project-scroll {
@@ -299,17 +368,6 @@ body {
 }
 
 /* Team */
-
-/* .peoples-team {
-    display: flex;
-    overflow-x: scroll;
-    scroll-snap-type: mandatory;
-}
-
-.peoples-team .people {
-    flex: 0 0 25%;
-    scroll-snap-align: start;
-} */
 
 .people {
     display: flex;
@@ -698,6 +756,20 @@ body {
 
 /* Adaptive */
 
+@media (max-width: 1200px) {
+
+.job-title {
+    font-size: 16px;
+    text-align: center;
+    width: 150px;
+}
+
+.people {
+    border: 0;
+}
+
+}
+
 @media (max-width: 990px) {
 
     /* Intro */
@@ -733,6 +805,13 @@ body {
         margin: 100px 0 100px 0;
     }
 
+    /* projects scroll */
+    .description-project-scroll {
+        top: 10px;
+        left: 10px;
+        font-size: 16px;
+        width: 230px;
+    }
 }
 
 @media (max-width: 770px) {
@@ -776,6 +855,27 @@ body {
 
     .project {
         width: 100%;
+    } 
+
+    .project-item-img{
+        min-height: 350px;    
+    }
+
+    .description-project-scroll {
+        top: 20px;
+        left: 20px;
+        font-size: 18px;
+        width: 250px;
+    }
+
+    /* team */
+
+    .img-team {
+        width: 150px;
+    }
+
+    .h5-team {
+        font-size: 16px;
     }
 }
 
@@ -810,6 +910,15 @@ body {
         font-size: 20px;
     }
 
+    /* projects scroll */
+
+    .description-project-scroll {
+        top: 20px;
+        left: 20px;
+        font-size: 20px;
+        width: 280px;
+    }
+
     /* form */
 
     .h3-form {
@@ -820,4 +929,12 @@ body {
     .position-form {
         width: 100%;
     }
+
+    /* team */
+
+    .people {
+        width: 350px;
+    }
+
+    
 }

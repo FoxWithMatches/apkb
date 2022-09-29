@@ -48,4 +48,80 @@ navToggle.on("click", function(event) {
   
   });
 
+  /* slider */
+  $("#js-scroll-projects").slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    dots: true,
+    
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+     
+        }
+      },
+      {
+        breakpoint: 770,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+ 
+        }
+      },
+      {
+        breakpoint:575,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+  });
+
+  $("#js-slider-team").slick({
+    infinite: true,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          infinite: true,
+     
+        }
+      },
+      {
+        breakpoint: 935,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+ 
+        }
+      },
+      {
+        breakpoint: 575,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2
+        }
+      },
+      {
+        breakpoint: 465,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1
+        }
+      }
+    ]
+    
+  });
+
 });
