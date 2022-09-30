@@ -642,7 +642,12 @@ body {
     margin-bottom: 100px;
 }
 
+.about-career {
+    width: 50%;
+}
+
 .img-career {
+    width: 50%;
     display: block;
     max-width: 100%;
     height: auto;
@@ -653,6 +658,12 @@ body {
     justify-content: center;
     align-items: center;
     margin-bottom: 100px;
+}
+
+.logo-partners img {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
 }
 
 .partners-team {
@@ -815,6 +826,12 @@ body {
         font-size: 16px;
         width: 230px;
     }
+
+    /* contacts */
+
+    .address {
+        width: 250px;
+    }
 }
 
 @media (max-width: 770px) {
@@ -880,6 +897,48 @@ body {
     .h5-team {
         font-size: 16px;
     }
+
+    /* career */
+
+    .career-item {
+        flex-direction: column;
+    }
+
+    .about-career {
+        width: 100%;
+    }
+
+    .img-career {
+        width: 100%;
+    }
+
+    .partners-team {
+        width: 350px;
+        margin: 0 auto;
+    }
+
+    /* contacts */
+
+    .contacts-item {
+        flex-direction: column;
+    }
+
+    .contacts-item .form-h3 {
+        width: 100%;
+    }
+    
+    .contacts-data {
+        width: 70%;
+    }
+
+    .address {
+        width: 250px;
+    }
+
+    .link {
+        text-align: center;
+        margin-bottom: 50px;
+    }
 }
 
 @media (max-width: 575px) {
@@ -906,7 +965,7 @@ body {
 
     .project-bckg-header {
         width: 320px;
-        margin: 50px 0 50px 0;
+        margin: 100px 0 50px 0;
     }
 
     .project-header {
@@ -939,5 +998,36 @@ body {
         width: 350px;
     }
 
-    
+     /* career */
+
+    .logo-partners img {
+        width: 200px;
+    }
+
+    .partners-team h3 {
+        font-size: 20px;
+    }
+
+     /* contacts */
+
+
+    .contacts-data {
+        width: 100%;
+    }
+
+    .address {
+        height: 150px;
+        padding: 15px;
+        right: 50px;
+    }
+
+    .address h3 {
+        font-size: 18px;
+    }
+
+    .address p {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
 }
