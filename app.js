@@ -27,3 +27,23 @@ function onTabClick(item) {
 }
 
 document.querySelector('.tabs__nav-btn').click();
+
+$(function() {
+$("#galery-project").slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: true,
+    fade: true,
+    asNavFor: "#galery-project-mini"
+  });
+  $("#galery-project-mini").slick({
+    infinite: true,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: "#galery-project",
+    // dots: true,
+    // centerMode: true,
+    focusOnSelect: true,
+  });
+});

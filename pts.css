@@ -94,6 +94,18 @@
 
 /* Galery */
 
+.galery-item {
+    width: 200px;
+    height: 100px;
+    padding: 5px;
+}
+
+.galery-img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 /* Table */
 
 .project-table {
@@ -390,4 +402,45 @@
 
 .tabs__item.active {
     display: block;
+}
+
+/* slick arrows */
+
+.slick-arrow {
+    display: block;
+    font-size: 0;
+    color: transparent;
+
+    border: 0;
+    background: 0;
+    cursor: pointer;
+
+    position: absolute;
+    bottom: -160px;
+    z-index: 1;
+    transform: translateY(-50%);
+}
+
+.slick-arrow:focus {
+    outline: 0;
+}
+
+.slick-prev {
+    left: 0;
+    transform: rotate(-45deg);
+}
+
+.slick-next {
+    right: 0;
+    transform: rotate(135deg);
+}
+
+.slick-arrow:after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    border-top: 2px solid #0E4674;
+    border-left: 2px solid #0E4674;
 }

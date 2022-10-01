@@ -11,6 +11,10 @@
         rel="stylesheet">
     <link rel="stylesheet" href="pts.css">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+
     <title>Малогабаритные волновые передачи | Статья</title>
 </head>
 
@@ -40,28 +44,30 @@
     <div class="page">
 
         <!-- Galery -->
-
-        <div class="project-galery">
-            <img src="/pts_img/MVP1.png" alt="small size wave transmission">
-            <img src="/pts_img/MVP2.png" alt="small size wave transmission">
-            <img src="/pts_img/MVP3.png" alt="small size wave transmission">
+        <div id="galery-project">
+            <div>
+                <img src="/pts_img/MVP1.png" alt="small size wave transmission">
+            </div>
+            <div>
+                <img src="/pts_img/MVP2.png" alt="small size wave transmission">
+            </div>
+            <div>
+                <img src="/pts_img/MVP3.png" alt="small size wave transmission">
+            </div>
+        </div>
+        <div id="galery-project-mini">
+            <div class="galery-item">
+                <img class="galery-img" src="/pts_img/MVP1.png" alt="small size wave transmission">
+            </div>
+            <div class="galery-item">
+                <img class="galery-img" src="/pts_img/MVP2.png" alt="small size wave transmission">
+            </div>
+            <div class="galery-item">
+                <img class="galery-img" src="/pts_img/MVP3.png" alt="small size wave transmission">
+            </div>
         </div>
 
-        <!-- Table -->
-
-        <!-- <table class="project-table">
-            <tr>
-                <td class="nav-cell">
-                    <a href="/projectFourDesc.html" class="table-link">Описание</a>
-                </td>
-                <td class="nav-cell">
-                    <a href="/projectFourCharact.html" class="table-link">Характеристики</a>
-                </td>
-                <td class="nav-cell active-cell">
-                    <a href="/projectFourArticle.html" class="table-link active-link">Статья</a>
-                </td>
-            </tr>
-        </table> -->
+        <!-- Tab bar -->
 
         <div class="tabs__nav">
             <button class="tabs__nav-btn" type="button" data-tab="#tab_1">Описание</button>
@@ -325,6 +331,7 @@
     </div>
 
 <script src="app.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 
 </body>
 
