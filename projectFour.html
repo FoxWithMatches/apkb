@@ -49,7 +49,7 @@
 
         <!-- Table -->
 
-        <table class="project-table">
+        <!-- <table class="project-table">
             <tr>
                 <td class="nav-cell">
                     <a href="/projectFourDesc.html" class="table-link">Описание</a>
@@ -61,11 +61,154 @@
                     <a href="/projectFourArticle.html" class="table-link active-link">Статья</a>
                 </td>
             </tr>
-        </table>
+        </table> -->
+
+        <div class="tabs__nav">
+            <button class="tabs__nav-btn" type="button" data-tab="#tab_1">Описание</button>
+            <button class="tabs__nav-btn" type="button" data-tab="#tab_2">Характеристики</button>
+            <button class="tabs__nav-btn" type="button" data-tab="#tab_3">Статья</button>
+        </div>
 
         <!-- Article -->
 
-        <div>
+        <div class="tabs__content">
+            <div class="tabs__item" id="tab_1">
+                <div>
+                    <p class="mb20">Конструкторским бюро ООО "АПКБ" был спроектирован и изготовлен малогабаритный редуктор на
+                        основе волновой передачи с промежуточными телами качения.
+                        Механическая передача, передающая движение за счет циклического возбуждения волн.
+                        Передача движения может производиться посредством зубьев, винтового принципа, а также фрикционного
+                        контакта.</p>
+                    <p class="head20">Преимущества волновой передачи:</p>
+                    <ul class="list">
+                        <li>большое передаточное отношение, при малом количестве деталей (i = 295)</li>
+                        <li>улучшенные массогабаритные характеристики по сравнению с обычными зубчатыми передачами</li>
+                        <li>высокая кинематическая точность и плавность хода</li>
+                        <li>высокая нагрузочная способность</li>
+                        <li>высокий ресурс работы</li>
+                        <li>большие перегрузочные резервы</li>
+                        <li>отсутствует дорогостоящее гибкое колесо</li>
+                    </ul>
+                </div>
+        
+                <div class="article-flex">
+                    <div class="article-column">
+                        <p class="head20">Состав электропривода:</p>
+                        <ul class="list-decimal">
+                            <li>Редуктор на основе волновой передачи с жестким колесом</li>
+                            <li>Цифровая система управления</li>
+                            <li>Электродвигатель с постоянными магнитами</li>
+                        </ul>
+                    </div>
+                    <div class="article-column">
+                        <p class="head20">Система управления:</p>
+                        <ul class="list-decimal">
+                            <li>Микропроцессорное управление</li>
+                            <li>Цифровой интерфейс управления (RS-485)</li>
+                            <li>Трехфазный инвертор</li>
+                            <li>Векторное управление электродвигателем</li>
+                        </ul>
+                    </div>
+                </div>
+        
+                <div>
+                    <p class="head20-centr">Сравнение с известными аналогами</p>
+                    <table class="project-table-char">
+                        <tr>
+                            <td class="nav-cell-char">Параметр</td>
+                            <td class="nav-cell-char">МИВП
+                                <p class="mid14">ООО “АПКБ”</p>
+                            </td>
+                            <td class="nav-cell-char">TS-80-85-TB-P8
+                                <p class="mid14">Spinea, Словакия</p>
+                            </td>
+                            <td class="nav-cell-char">FHA-17C-160
+                                <p class="mid14">Harmonic Drive, Германия</p>
+                            </td>
+                            <td class="nav-cell-char">XB1-80
+                                <p class="mid14">HanZhen, Китай</p>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="nav-cell-char">Наружный диаметр, мм</td>
+                            <td class="nav-cell-char">80</td>
+                            <td class="nav-cell-char">82</td>
+                            <td class="nav-cell-char">128</td>
+                            <td class="nav-cell-char">80</td>
+                        </tr>
+                        <tr>
+                            <td class="nav-cell-char">Длина без выходного вала, мм</td>
+                            <td class="nav-cell-char">52</td>
+                            <td class="nav-cell-char">60</td>
+                            <td class="nav-cell-char">78</td>
+                            <td class="nav-cell-char">243</td>
+                        </tr>
+                        <tr>
+                            <td class="nav-cell-char">Макс. передаточное отношение</td>
+                            <td class="nav-cell-char">231</td>
+                            <td class="nav-cell-char">85</td>
+                            <td class="nav-cell-char">160</td>
+                            <td class="nav-cell-char">200</td>
+                        </tr>
+                        <tr>
+                            <td class="nav-cell-char">Максимальный момент, Нхм</td>
+                            <td class="nav-cell-char">90</td>
+                            <td class="nav-cell-char">78</td>
+                            <td class="nav-cell-char">64</td>
+                            <td class="nav-cell-char">150</td>
+                        </tr>
+                        <tr>
+                            <td class="nav-cell-char">Масса, кг</td>
+                            <td class="nav-cell-char">2</td>
+                            <td class="nav-cell-char">1.64</td>
+                            <td class="nav-cell-char">2.5</td>
+                            <td class="nav-cell-char">10</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="tabs__item" id="tab_2">
+                <p class="head20">Характеристики:</p>
+                <table class="project-table-char">
+                    <tr>
+                        <td class="nav-cell-char">Нагрузка непрерывная / пиковая</td>
+                        <td class="nav-cell-char">50/90 Н*м</td>
+                    </tr>
+                    <tr>
+                        <td class="nav-cell-char">Скорость, не менее</td>
+                        <td class="nav-cell-char">60 градус/сек</td>
+                    </tr>
+                    <tr>
+                        <td class="nav-cell-char">Свободный ход</td>
+                        <td class="nav-cell-char">0,30 (не более)</td>
+                    </tr>
+                    <tr>
+                        <td class="nav-cell-char">Передаточное число редуктора</td>
+                        <td class="nav-cell-char">231</td>
+                    </tr>
+                    <tr>
+                        <td class="nav-cell-char">Порог чувствительности, не более</td>
+                        <td class="nav-cell-char">0,25 %</td>
+                    </tr>
+                    <tr>
+                        <td class="nav-cell-char">Напряжение питания номинальное</td>
+                        <td class="nav-cell-char">28 В</td>
+                    </tr>
+                    <tr>
+                        <td class="nav-cell-char">Ток потребления, не более</td>
+                        <td class="nav-cell-char">5 А (не более)</td>
+                    </tr>
+                    <tr>
+                        <td class="nav-cell-char">Габаритные размеры (В х Ш х Д)</td>
+                        <td class="nav-cell-char">82х82х114 мм</td>
+                    </tr>
+                    <tr>
+                        <td class="nav-cell-char">Вес (без двигателя)</td>
+                        <td class="nav-cell-char">2 кг</td>
+                    </tr>
+                </table>
+            </div>
+             <div class="tabs__item" id="tab_3">
             <p class="mb20">Теория зацепления данных передач была разработана под руководством доктора Беляева в Томском
                 политехническом университете, и долгое время прикладное значение имела только в ракетно-космических и
                 оборонных проектах. Волновая передача с промежуточными звеньями (ВППЗ) является уникальной разработкой в
@@ -152,6 +295,7 @@
             <div class="mb20">Волновая передача с промежуточными звеньями доказала свою надежность и эффективность, безотказно эксплуатируясь уже более десяти лет в самых различных отраслях промышленности.</div>
 
             <div class="mb20">Волновые редукторы с промежуточными звеньями от военной и космической техники получили широкое применение в нефтегазовой промышленности во многом из-за схожих требований к оборудованию. Тяжелейшие нагрузочные и климатические условия работы является нормой для работы этого оборудования. С одной стороны механизмы должны обеспечивать высокую надежность, с другой стороны быть легкими, малогабаритными и мобильными, так как удаленность месторождений от транспортных линий и ремонтных баз существенно усложняет доставку и ремонт оборудования. Требования становятся все более актуальными в связи с интенсивным освоением в последнее время труднодоступных месторождений в районах крайнего севера и шельфовых зон.</div>
+            </div>
         </div>
 
         <!-- Footer -->
@@ -179,6 +323,9 @@
     <div class="footer-head">
         <p class="footer-name-text"> ООО "Арзамасское приборостроительное конструкторское бюро"</p>
     </div>
+
+<script src="app.js"></script>
+
 </body>
 
 </html>

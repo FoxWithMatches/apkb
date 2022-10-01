@@ -348,3 +348,46 @@
         width: 250px;
     }
 }
+
+/* Tab bar */
+
+.tabs__nav {
+    display: flex;
+    height: 80px;
+}
+
+.tabs__nav-btn {
+    padding: 15px 30px;
+    width: 33%;
+    font-size: 20px;
+    background-color: transparent;
+    border: 1px solid #454444;
+    border-right: 0;
+    cursor: pointer;
+}
+
+.tabs__nav-btn:last-child {
+    border-right: 1px solid #454444;
+}
+
+.tabs__nav-btn:hover {
+    background: #ddd;
+}
+
+.tabs__nav-btn.active {
+    background-color: #0E4674;;
+    color: #fff;
+}
+
+.tabs__content {
+    padding: 30px;
+    background-color: #fff;
+}
+
+.tabs__item {
+    display: none;
+}
+
+.tabs__item.active {
+    display: block;
+}
