@@ -95,8 +95,8 @@
 /* Galery */
 
 .galery-item {
-    width: 200px;
-    height: 100px;
+    /* width: 200px;
+    height: 100px; */
     padding: 5px;
 }
 
@@ -414,9 +414,9 @@
     border: 0;
     background: 0;
     cursor: pointer;
-
+    
     position: absolute;
-    bottom: -160px;
+    bottom: 140px;
     z-index: 1;
     transform: translateY(-50%);
 }

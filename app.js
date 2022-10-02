@@ -33,17 +33,17 @@ $("#galery-project").slick({
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: true,
-    fade: true,
+    arrows: false,
     asNavFor: "#galery-project-mini"
   });
   $("#galery-project-mini").slick({
     infinite: true,
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 3,
+    arrows: true,
     asNavFor: "#galery-project",
     // dots: true,
-    // centerMode: true,
+    centerMode: true,
     focusOnSelect: true,
   });
 });
