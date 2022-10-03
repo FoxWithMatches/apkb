@@ -1,38 +1,70 @@
-.page {
+body {
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #454444;
+
+    -webkit-font-smoothing: antialiased;
+    background-color: #fff;
+}
+
+.container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1230px;
     margin: 0 auto;
-    position: relative;
+    padding: 0 15px;
     box-sizing: border-box;
+
     font-size: 18px;
     font-family: 'Inter', sans-serif;
     line-height: 1.6;
     color: #454444;
 }
 
+.page {
+    overflow-x: hidden;
+}
+
 /* Header */
 
-.bckg-header {
+.logotype {
+    width: 250px;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
     background-color: #0E4674;
-    padding: 50px;
+    /* padding-bottom: 10px; */
     position: absolute;
-    right: 0;
-    top: 10px;
-    width: 850px;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.header.fixed {
+    height: auto;
+    position: fixed;
+    background-color: #0E4674;
+}
+
+.header.fixed .header-item {
+    padding-top: 10px;
+    padding-bottom: 0px;
 }
 
 .header-item {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 10px 30px;
 }
 
-.logotype {
-    width: 250px;
-}
+/* Nav */
 
 .nav-header {
-    margin: 50px;
+    display: flex;
+    font-weight: 600;
 }
 
 .nav-link {
@@ -40,6 +72,7 @@
     color: #fff;
     text-decoration: none;
     margin-left: 20px;
+    z-index: 2;
 }
 
 .nav-link:first-child {
@@ -51,7 +84,7 @@
     display: block;
     position: absolute;
     right: 0;
-    bottom: -10px;
+    bottom: -5px;
     width: 0;
     height: 2px;
     background-color: #fff;
@@ -65,10 +98,49 @@
     display: block;
     position: absolute;
     left: 0;
-    bottom: -10px;
+    bottom: -5px;
     height: 2px;
     background-color: #fff;
     transition: width 0.5s;
+}
+
+/* Burger */
+
+.burger {
+    display: none;
+    background: none;
+    border: 0;
+    cursor: pointer;
+    padding: 9px 10px;
+}
+
+.burger_item {
+    display: block;
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    font-size: 0;
+    color: transparent;
+    position: relative;
+}
+
+.burger_item:before,
+.burger_item:after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+
+.burger_item:before {
+    top: -8px;
+}
+
+.burger_item:after {
+    bottom: -8px;
 }
 
 /* Project */
@@ -79,7 +151,7 @@
     left: 0;
     height: 60px;
     width: 750px;
-    margin: 50px 0;
+    margin: 150px 0 100px 0;
 }
 
 .project-header {
@@ -261,6 +333,12 @@
 
 /* Footer */
 
+
+.div-logo {
+    margin: -80px auto 0px;
+    width: 400px;
+}
+
 .footer {
     display: flex;
     flex-direction: row;
@@ -325,42 +403,6 @@
     transition: 1s;
 }
 
-/* Adaptive */
-
-@media screen and (max-width: 1205px) {
-    .page {
-        max-width: 1100px;
-    }
-
-    .bckg-header {
-        width: 750px;
-    }
-}
-
-@media screen and (max-width: 1105px) {
-    .page {
-        max-width: 1000px;
-    }
-
-    .bckg-header {
-        width: 650px;
-    }
-}
-
-@media screen and (max-width: 1005px) {
-    .page {
-        max-width: 900px;
-    }
-
-    .bckg-header {
-        width: 550px;
-    }
-
-    .footer-link {
-        width: 250px;
-    }
-}
-
 /* Tab bar */
 
 .tabs__nav {
@@ -404,7 +446,7 @@
     display: block;
 }
 
-/* slick arrows */
+/* Slick arrows */
 
 .slick-arrow {
     display: block;
@@ -443,4 +485,68 @@
 
     border-top: 2px solid #0E4674;
     border-left: 2px solid #0E4674;
+}
+
+/* Adaptive */
+
+@media (max-width: 1200px) {
+
+}
+
+@media (max-width: 990px) {
+   
+    .logotype {
+        width: 200px;
+        padding-top: 15px;
+    }
+
+.project-bckg-header {
+        width: 550px;
+        margin: 100px 0 100px 0;
+    }
+
+}
+
+@media (max-width: 770px) {
+    /* header */
+
+    .header-item {
+        padding: 10px 20px;
+    }
+
+    .nav-header {
+        display: none;
+
+        width: 100%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #0E4674;
+    }
+
+    .nav-header.show {
+        display: flex;
+        flex-direction: column;
+        text-align: right;
+    }
+
+    .nav-link {
+        padding: 8px 25px;
+    }
+
+    .burger {
+        display: block;
+    }
+}
+
+@media (max-width: 575px) {
+
+    .project-bckg-header {
+            width: 320px;
+            margin: 100px 0 50px 0;
+        }
+    
+        .project-header {
+            font-size: 20px;
+        }
 }

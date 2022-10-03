@@ -18,22 +18,32 @@
     <title>Малогабаритные волновые передачи | Статья</title>
 </head>
 
-<!-- Header -->
-
 <body>
-    <div class="bckg-header"></div>
     <div class="page">
-        <div class="header-item">
-            <img class="logotype" src="/img/logotype.png" alt="logotype apkb">
-            <nav class="nav-header">
-                <a href="" class="nav-link">Главная</a>
-                <a href="" class="nav-link">Проекты</a>
-                <a href="" class="nav-link">Карьера</a>
-                <a href="" class="nav-link">Информация</a>
-                <a href="" class="nav-link">Контакты</a>
-            </nav>
+
+        <!-- Header -->
+
+    <header class="header" id="header">
+        <div class="container">
+            <div class="header-item">
+                <a href="index.html">
+                    <img class="logotype" src="/img/apkbLogoWhite.svg" alt="logotype apkb">
+                </a>
+                <nav class="nav-header" id="nav">
+                    <a href="#" class="nav-link" data-scroll="#intro">Главная</a>
+                    <a href="projects.html" class="nav-link">Проекты</a>
+                    <a href="career.html" class="nav-link">Карьера</a>
+                    <a href="" class="nav-link">Информация</a>
+                    <a href="contacts.html" class="nav-link">Контакты</a>
+                </nav>
+
+                <button class="burger" type="button" id="navToggle">
+                    <span class="burger_item">Menu</span>
+                </button>
+
+            </div>
         </div>
-    </div>
+    </header>
 
     <!-- Project -->
 
@@ -41,7 +51,7 @@
         <h3 class="project-header">Малогабаритные волновые передачи</h3>
     </div>
 
-    <div class="page">
+    <div class="container">
 
         <!-- Galery -->
         <div id="galery-project">
@@ -105,7 +115,7 @@
             <button class="tabs__nav-btn" type="button" data-tab="#tab_3">Статья</button>
         </div>
 
-        <!-- Article -->
+        <!-- Tab 1 -->
 
         <div class="tabs__content">
             <div class="tabs__item" id="tab_1">
@@ -203,6 +213,9 @@
                     </table>
                 </div>
             </div>
+
+            <!-- Tab 2 -->
+
             <div class="tabs__item" id="tab_2">
                 <p class="head20">Характеристики:</p>
                 <table class="project-table-char">
@@ -244,6 +257,9 @@
                     </tr>
                 </table>
             </div>
+
+            <!-- Tab 3 -->
+
              <div class="tabs__item" id="tab_3">
             <p class="mb20">Теория зацепления данных передач была разработана под руководством доктора Беляева в Томском
                 политехническом университете, и долгое время прикладное значение имела только в ракетно-космических и
@@ -338,22 +354,28 @@
 
         <footer class="footer">
             <div class="footer-cell">
-                <img class="footer-img" src="/img/Phone.svg" alt="phone">
+                <img class="footer-img" src="/pts_img/Phone.svg" alt="phone">
                 <p class="footer-name">Телефон приемной</p>
                 <a href="tel:+78314795505" class="footer-link">+7 (831) 47-95-505</a>
             </div>
             <div class="footer-cell">
-                <img class="footer-img" src="/img/Address.svg" alt="phone">
+                <img class="footer-img" src="/pts_img/Address.svg" alt="address">
                 <p class="footer-name">Адрес</p>
                 <p class="footer-link">607220, г.Арзамас, ул.50 Лет ВЛКСМ, д.22 </p>
                 <p class="footer-link">Часы работы:<br>пн-пт 8.00 - 17.00, сб-вс выходной</p>
             </div>
             <div class="footer-cell">
-                <img class="footer-img" src="/img/Mail.svg" alt="phone">
+                <img class="footer-img" src="/pts_img/Mail.svg" alt="Mail">
                 <p class="footer-name">Электронная почта</p>
                 <a href="mailto:office@oooapkb.ru" class="footer-link">office@oooapkb.ru</a>
             </div>
         </footer>
+    </div>
+
+    <div class="div-logo">
+        <a href="#" data-scroll="#intro">
+        <img src="/img/apkbLogoBlue.svg" alt="logotype">
+        </a>
     </div>
 
     <div class="footer-head">
@@ -362,6 +384,7 @@
 
 <script src="app.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+</div>
 
 </body>
 
