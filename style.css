@@ -10,7 +10,7 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1230px;
     margin: 0 auto;
     padding: 0 15px;
     box-sizing: border-box;
@@ -43,11 +43,6 @@ body {
 }
 
 /* Header */
-
-.div-logo {
-    margin: -80px auto 0px;
-    width: 400px;
-}
 
 .logotype {
     width: 250px;
@@ -226,6 +221,7 @@ body {
     height: 60px;
     width: 750px;
     margin: 150px 0 100px 0;
+    box-shadow: 1px 3px 5px rgba(68, 67, 67, 0.5);
 }
 
 .project-header {
@@ -567,6 +563,11 @@ body {
 }
 
 /* Footer */
+
+.div-logo {
+    margin: -80px auto 0px;
+    width: 400px;
+}
 
 .footer {
     display: flex;
