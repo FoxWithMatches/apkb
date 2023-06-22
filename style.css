@@ -129,20 +129,26 @@ body {
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-    min-height: 820px;
+    max-height: 1080px;
     padding-top: 100px;
     text-align: right;
 
     background: #97bde8 url("img/bckg.png") center no-repeat;
     background-size: cover;
+    background-position: 0%;
+}
+
+.container_first_page {
+    display: flex;
+    padding: 0 30px;
+}
+.container_width {
+    display: flex;
+    width: 30%;
 }
 
 .h1 {
-    position: absolute;
-    right: 15px;
-    bottom: 150px;
-    width: 100%;
-    max-width: 600px;
+    width: 70%;
 }
 
 .h1-text {
@@ -783,6 +789,11 @@ body {
     border: 0;
 }
 
+.intro {
+    background-position: 30%;
+}
+
+
 }
 
 @media (max-width: 990px) {
@@ -825,7 +836,7 @@ body {
         top: 10px;
         left: 10px;
         font-size: 16px;
-        width: 230px;
+        width: 220px;
     }
 
     /* contacts */
@@ -869,7 +880,13 @@ body {
     /* intro */
 
     .h1 {
-        bottom: 280px;;
+        bottom: 280px;
+        width: 100%;
+    }
+
+    .container_width {
+        display: flex;
+        width: 0%;
     }
 
     /* projects nav */
@@ -886,7 +903,7 @@ body {
         top: 20px;
         left: 20px;
         font-size: 18px;
-        width: 250px;
+        width: 230px;
     }
 
     /* team */
@@ -945,19 +962,26 @@ body {
 @media (max-width: 575px) {
 
     .intro {
-        text-align: center;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 400px;
+        max-height: 1080px;
+        padding-top: 100px;
+        text-align: right;
+    
+        background: #97bde8 url("img/bckg.png") center no-repeat;
+        background-position: 40%;
     }
-
-    .h1 {
-        right: 0;
-    }
+    
 
     .h1-text {
         font-size: 30px;
     }
 
     .h2-text {
-        width: 300px;
+
         font-size: 16px;
         margin: 10px auto 30px;
     }
@@ -1031,4 +1055,29 @@ body {
         margin-bottom: 0;
     }
 
+}
+
+
+@media (max-width: 414px) {
+    .h1-text {
+        font-size: 24px;
+    }
+
+    .container_first_page {
+        display: flex;
+        padding: 0;
+    }
+
+    .header-item {
+        padding: 10px 0;
+    }
+
+       /* projects scroll */
+
+       .description-project-scroll {
+        top: 20px;
+        left: 20px;
+        font-size: 20px;
+        width: 250px;
+    }
 }
