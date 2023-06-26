@@ -55,7 +55,7 @@ $("#galery-project").slick({
   $("#galery-project-mini").slick({
     infinite: true,
     slidesToShow: 3,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     arrows: true,
     asNavFor: "#galery-project",
     // dots: true,

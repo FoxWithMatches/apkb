@@ -107,7 +107,7 @@ navToggle.on("click", function(event) {
         }
       },
       {
-        breakpoint: 575,
+        breakpoint: 650,
         settings: {
           slidesToShow: 2,
           slidesToScroll: 2
