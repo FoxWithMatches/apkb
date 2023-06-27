@@ -252,6 +252,21 @@
     width: 100%;
 }
 
+/* Information */
+
+.download {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    color: #454444;
+    margin-bottom: 20px;
+}
+
+.download:hover {
+    color: #0E4674;
+    cursor: pointer;
+}
+
 @media (max-width: 821px) {
     .figure-article-left, .figure-article-right  {
         float: none;
