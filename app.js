@@ -1,11 +1,5 @@
-
-    // let header = $("#header");
-    // let intro = $("#intro");
-    // let introH;
-    // let scrollPos = $(window).scrollTop();
-    
-    let nav = $("#nav");
-    let navToggle = $("#navToggle");
+let nav = $("#nav");
+let navToggle = $("#navToggle");
 
     /* navToggle */
 
@@ -14,7 +8,7 @@ navToggle.on("click", function(event) {
     nav.toggleClass("show");
   });
 
-    const tabsBtn = document.querySelectorAll(".tabs__nav-btn");
+const tabsBtn = document.querySelectorAll(".tabs__nav-btn");
 const tabsItems = document.querySelectorAll(".tabs__item");
 
 tabsBtn.forEach(onTabClick);
