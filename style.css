@@ -253,6 +253,9 @@ body {
 .slick-dots {
     display: flex;
     justify-content: center;
+    position: absolute;
+    left: 50%;
+    right: 50%;
 }
 
 .slick-dots li {
@@ -291,7 +294,7 @@ body {
     cursor: pointer;
 
     position: absolute;
-    bottom: 20px;
+    bottom: -40px;
     z-index: 1;
     transform: translateY(-50%);
 }
@@ -700,6 +703,11 @@ body {
 
 .contacts-data {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.link {
     display: flex;
     flex-direction: column;
 }
@@ -1113,6 +1121,10 @@ body {
         width: 10px;
         height: 10px;
     }
+
+    .slick-dots li {
+        margin: 10px 5px;
+    }
 }
 
 
@@ -1165,4 +1177,14 @@ body {
     .partners-team {
         width: 300px;
     }
+
+    .logo-partners {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+   .logo-partners img {
+        width: 300px;
+    }
+
 }

@@ -169,6 +169,7 @@
 .tabs__nav {
     display: flex;
     height: 80px;
+    margin-top: 60px;
 }
 
 .tabs__nav-btn {
@@ -209,48 +210,9 @@
 
 /* Slick arrows */
 
-.slick-arrow {
-    display: block;
-    font-size: 0;
-    color: transparent;
-
-    border: 0;
-    background: 0;
-    cursor: pointer;
-    
-    position: absolute;
-    bottom: 140px;
-    z-index: 1;
-    transform: translateY(-50%);
-}
-
-.slick-arrow:focus {
-    outline: 0;
-}
-
-.slick-prev {
-    left: 0;
-    transform: rotate(-45deg);
-}
-
-.slick-next {
-    right: 0;
-    transform: rotate(135deg);
-}
-
-.slick-arrow:after {
-    content: "";
-    display: block;
-    width: 16px;
-    height: 16px;
-
-    border-top: 2px solid #0E4674;
-    border-left: 2px solid #0E4674;
-}
-
 .slick-slide img {
     width: 100%;
-}
+} 
 
 /* Information */
 
@@ -283,6 +245,8 @@
     .tabs__nav-btn {
         width: 100%;
         font-size: 18px;
+        border: 1px solid #454444;
+        border-bottom: 0;
     }
 
     .tabs__nav {
@@ -290,6 +254,10 @@
         flex-wrap: wrap;
         height: 80px;
         margin: 50px 0 100px 0;
+    }
+    
+    .tabs__nav-btn:last-child {
+        border-bottom: 1px solid #454444;
     }
 
     .nav-cell-char {
